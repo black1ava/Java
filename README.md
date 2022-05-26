@@ -129,4 +129,42 @@ Execute:
 > Cat default constructor
 
 #### Overloading method
+- Class
+- Inheritance
+
+    public class Animal {
+
+      public String type;
+
+      public Animal(){
+        System.out.println("Animal default constructor");
+      }
+
+      public void eat(){
+        System.out.println(type + " is eating");
+      }
+    }
+
+    public class Mammal extends Animal {
+      public Mammal(){
+        System.out.println("Mammal default constructor");
+      }
+
+      void eat(String sth){
+        System.out.println(type + " is eating " + sth); //overloading method
+      }
+    }
+
+    public class Cat extends Mammal {
+      public Cat(){
+        System.out.println("Cat defautl constructor");
+      }
+    }
+
+    public class Main {
+      public static void main(string[] args){
+        Cat myCat = new Cat();
+      }
+    }
+
 #### Overriding method
