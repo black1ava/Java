@@ -71,6 +71,7 @@ Constructor characteristic
   - inheriance level: Single Level, Multi-Level, Multiple Level
 
   Single Level
+  
     A  
     ^  
     |  
