@@ -71,10 +71,10 @@ Constructor characteristic
   - inheriance level: Single Level, Multi-Level, Multiple Level
 
   Single Level
-   A
-   ^
-   |
-   B
+   A  
+   ^  
+   |  
+   B  
 
   Multi-Level
    A  
@@ -86,12 +86,12 @@ Constructor characteristic
    C  
   Multiple Level
 
-  A    B
-  ^    ^
-  |    |
-  ______
-    |
-    C
+  A    B  
+  ^    ^  
+  |    |  
+  ______  
+    |  
+    C  
   
 Inheritance:
  - Class inheriance: Single, Multi
