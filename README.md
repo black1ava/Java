@@ -100,6 +100,7 @@ Inheritance:
 
 #### Constructor in inheritance
 
+
     ```java
     public class Animal {
       public Animal(){
@@ -179,6 +180,7 @@ Execute:
 
 **Overriding method, this mechanism occur only in inheritance process, when two**
 
+
     ```java
     public class Animal {
 
@@ -234,6 +236,7 @@ Execute:
   - Method:
     - Every subclass must implemeneted or overriding abstract method of supperclass, unless subclass also abstract
     - contain only method signature(no mehthod body)
+
 
     ```java
     public abstract class Vehicle {
