@@ -71,7 +71,7 @@ Constructor characteristic
   - inheriance level: Single Level, Multi-Level, Multiple Level
 
   Single Level
-  
+
     A  
     ^  
     |  
@@ -100,6 +100,7 @@ Inheritance:
 
 #### Constructor in inheritance
 
+    ``` java
     public class Animal {
       public Animal(){
         System.out.println("Animal default constructor");
@@ -123,6 +124,7 @@ Inheritance:
         Cat myCat = new Cat();
       }
     }
+    ```
 
 Execute:
 > Animal default constructor
@@ -133,6 +135,8 @@ Execute:
 - Class
 - Inheritance
 
+
+    ```java
     public class Animal {
 
       public String type;
@@ -167,6 +171,7 @@ Execute:
         Cat myCat = new Cat();
       }
     }
+    ```
 
 #### Overriding method
 - happend in inheriance
@@ -174,6 +179,7 @@ Execute:
 
 **Overriding method, this mechanism occur only in inheritance process, when two**
 
+    ```java
     public class Animal {
 
       public String type;
@@ -215,6 +221,7 @@ Execute:
         myCat.eat();
       }
     }
+    ```java
 
 > Mammal is eating
 
@@ -227,3 +234,19 @@ Execute:
   - Method:
     - Every subclass must implemeneted or overriding abstract method of supperclass, unless subclass also abstract
     - contain only method signature(no mehthod body)
+
+    ```java
+    public abstract class Vehicle {
+      void forward(){
+        System.out.println("Vehicle is driving forward");
+      }
+
+      abstract void backward();
+    }
+
+    public class Car extends Vehicle {
+      void backward(){
+        System.out.println("Car is driving backward");
+      }
+    }
+    ```
