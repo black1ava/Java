@@ -99,29 +99,29 @@ Inheritance:
 
 #### Constructor in inheritance
 
-public class Animal {
-  public Animal(){
-    System.out.println("Animal default constructor");
+  public class Animal {
+    public Animal(){
+      System.out.println("Animal default constructor");
+    }
   }
-}
 
-public class Mammal extends Animal {
-  public Mammal(){
-    System.out.println("Mammal default constructor");
+  public class Mammal extends Animal {
+    public Mammal(){
+      System.out.println("Mammal default constructor");
+    }
   }
-}
 
-public class Cat extends Mammal {
-  public Cat(){
-    System.out.println("Cat defautl constructor");
+  public class Cat extends Mammal {
+    public Cat(){
+      System.out.println("Cat defautl constructor");
+    }
   }
-}
 
-public class Main {
-  public static void main(string[] args){
-    Cat myCat = new Cat();
+  public class Main {
+    public static void main(string[] args){
+      Cat myCat = new Cat();
+    }
   }
-}
 
 Execute:
 > Animal default constructor
