@@ -128,9 +128,9 @@ Inheritance:
     ```
 
 Execute:
-> Animal default constructor
-> Mammal default constructor
-> Cat default constructor
+> Animal default constructor  
+> Mammal default constructor  
+> Cat default constructor  
 
 #### Overloading method
 - Class
