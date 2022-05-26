@@ -77,20 +77,13 @@ Constructor characteristic
    B
 
   Multi-Level
-   A
-
-   ^
-
-   |
-
-   B
-
-   ^
-
-   |
-
-   C
-   
+   A  
+   ^  
+   |  
+   B  
+   ^  
+   |  
+   C  
   Multiple Level
 
   A    B
