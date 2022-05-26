@@ -71,27 +71,27 @@ Constructor characteristic
   - inheriance level: Single Level, Multi-Level, Multiple Level
 
   Single Level
-   A  
-   ^  
-   |  
-   B  
+    A  
+    ^  
+    |  
+    B  
 
-  Multi-Level
-   A  
-   ^  
-   |  
-   B  
-   ^  
-   |  
-   C  
-  Multiple Level
-
-  A    B  
-  ^    ^  
-  |    |  
-  ______  
+    Multi-Level
+    A  
+    ^  
+    |  
+    B  
+    ^  
     |  
     C  
+    Multiple Level
+
+    A    B  
+    ^    ^  
+    |    |  
+    ______  
+      |  
+      C  
   
 Inheritance:
  - Class inheriance: Single, Multi
@@ -168,3 +168,61 @@ Execute:
     }
 
 #### Overriding method
+- happend in inheriance
+- in the same class, we call it **duplicating method**. In inheriance, we call it overriding method
+
+**Overriding method, this mechanism occur only in inheritance process, when two**
+
+    public class Animal {
+
+      public String type;
+
+      public Animal(){
+        System.out.println("Animal default constructor");
+      }
+
+      public void eat(){
+        System.out.println(type + " is eating");
+      }
+    }
+
+    public class Mammal extends Animal {
+      public Mammal(){
+        System.out.println("Mammal default constructor");
+      }
+
+      void eat(String sth){
+        System.out.println(type + " is eating " + sth); //overloading method
+      }
+
+      // overriding method
+      void eat(){
+        super.eat() // execute super class method
+        System.out.println("Mammal is eating");
+      }
+    }
+
+    public class Cat extends Mammal {
+      public Cat(){
+        System.out.println("Cat defautl constructor");
+      }
+    }
+
+    public class Main {
+      public static void main(string[] args){
+        Cat myCat = new Cat();
+        myCat.eat();
+      }
+    }
+
+> Mammal is eating
+
+#### Modifier (abstract, final, static)
+
+- abstract modifier
+  - Class:
+    - cannot be instantiated but can be extended
+    - may or may not contain abstract methods
+  - Method:
+    - Every subclass must implemeneted or overriding abstract method of supperclass, unless subclass also abstract
+    - contain only method signature(no mehthod body)
