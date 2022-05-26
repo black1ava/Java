@@ -221,7 +221,7 @@ Execute:
         myCat.eat();
       }
     }
-    ```java
+    ```
 
 > Mammal is eating
 
