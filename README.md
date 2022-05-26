@@ -100,7 +100,7 @@ Inheritance:
 
 #### Constructor in inheritance
 
-    ``` java
+    ```java
     public class Animal {
       public Animal(){
         System.out.println("Animal default constructor");
