@@ -18,6 +18,6 @@ public class Hero extends Character{
   }
 
   public void winnerAlert(){
-    System.out.println("Hero is the winner");
+    System.out.println("Hero: "+ this.name +" is the winner");
   }
 }

@@ -17,6 +17,6 @@ public class Enemy extends Character{
   }
 
   public void winnerAlert(){
-    System.out.println("Enemy is the winner");
+    System.out.println("Enemy: "+ this.name + " is the winner");
   }
 }

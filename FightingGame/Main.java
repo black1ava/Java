@@ -5,7 +5,7 @@ public class Main {
     Hero hero = new Hero("Tharath", 100, 50);
     hero.showInfo();
 
-    Enemy enemy = new Enemy("Wolf", 500, 10);
+    Enemy enemy = new Enemy("Wolf", 400, 10);
     enemy.showInfo();
 
     if(hero.fighting(enemy)){
