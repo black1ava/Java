@@ -253,4 +253,201 @@ Execute:
       }
     }
     ```
-  -
+  - Final Modifier
+    - Class
+      - Cannot be extended but can be instantiated
+
+    - Data member
+      - It is become constant variable
+
+    -Method
+      - Cannot be overriden by subclass
+
+    ```java
+      public abstract class Vehicle {
+        public final void forward(){
+          System.out.println("Vehicle is moving forward");
+        }
+        public abstract void backward();
+      }
+
+      public class Car extends Vehicle {
+        public void forward(){
+          // Some code
+        } // error: forward() has final modifer
+
+        public void backward(){
+          System.out.println("Car is moving backward");
+        }
+      }
+    ```
+
+    ```java
+      public final class Vehicle {
+        public void forward(){
+          // some code
+        }
+
+        public void backward(){
+          // some code
+        }
+      }
+
+      public class Car extends Vehicle {
+        // some code
+      } // error vehicle has final modifer
+    ```
+
+  - static modifer
+    -class (inner class)
+    - Data member
+      - can access directly by class name
+      - share a single value to all object which instantiated from same class
+
+    -method
+      - can access directly by class name
+      - can only access to static member
+  ```java
+    public class Person {
+      static String name; // class variable
+      String sex; // instance variable
+
+      static void run(){
+        System.out.println(this.name + " is running");
+      }
+
+      void walking(){
+        System.out.println(this.name + " is walking");
+      }
+    }
+
+    public class Main {
+      public static void main(String[] args){
+        Person p1 = new Person();
+        Person p2 = new Person();
+
+        p1.name = "Sophanno";
+        p2.name = "Sopheak";
+
+        p1.run(); //Sopheak is running
+        p2.run(); //Sopheak is running
+
+        Person p3 = new Person();
+
+        p3.run(); //Sopheak is running
+
+        // Person.name = "Testing"; right
+        // Person.sex = ""; wrong
+
+        Person.run();
+      }
+    }
+  ```
+
+  - nested class
+    - non-static nested class (inner class)
+      - Member inner class
+      - Anonymous inner class
+      - Local inner class
+    - static nested class
+
+  ```java
+    public class Outer {
+      int data;
+
+      void print(){
+        System.out.println("Data: " + data);
+
+        Inner obj = new Inner();
+        obj.Show();
+      }
+
+      class Inner { // member inner class
+          void show(){
+            System.out.println("Data: " + data);
+          }
+      }
+    }
+
+    public class Main {
+      public static void main(String[] args){
+        Outer outer = new Outer();
+        Outer.Inner inner = outer.new Inner();
+
+        outer.data = 100;
+
+        inner.show(); // 100
+      }
+    }
+  ```
+
+  ```java
+    public class Outer {
+      int data;
+
+      void print(){
+        System.out.println("Data: " + data);
+
+        // Inner obj = new Inner();
+        // obj.Show();
+        Inner.show();
+      }
+
+      static class Inner { // member inner class
+          void show(){
+            System.out.println("Data: " + data);
+          }
+      }
+    }
+
+    public class Main {
+      public static void main(String[] args){
+        Outer outer = new Outer();
+        Outer.Inner inner = new Outer.Inner();
+
+        outer.data = 100;
+
+        inner.show(); // 100
+      }
+    }
+  ```
+
+  ```java
+    public class Outer {
+      int data;
+
+      void print(){
+        System.out.println("Data: " + data);
+
+        // Inner obj = new Inner();
+        // obj.Show();
+        Inner.show();
+
+        Local local = new Local();
+        local.show();
+
+        class Local {
+          void show(){
+            // some code
+          }
+        }
+      }
+
+      static class Inner { // member inner class
+          void show(){
+            System.out.println("Data: " + data);
+          }
+      }
+    }
+
+    public class Main {
+      public static void main(String[] args){
+        Outer outer = new Outer();
+        Outer.Inner inner = new Outer.Inner();
+
+        outer.data = 100;
+
+        inner.show(); // 100
+      }
+    }
+  ```
