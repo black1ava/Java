@@ -60,7 +60,7 @@ Person
 
 #### Overloading methods, this machanism occur when two or more methods have the same name and different in parameters (different number or parameters, different types of parameter). They are complement
 
-#### Constructor is a special member which use to initialize valueto new object. Constructor execute one time only when creating object
+#### Constructor is a special member which use to initialize value to new object. Constructor execute one time only when creating object
 
 Constructor characteristic
 - same name as class name
