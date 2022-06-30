@@ -52,6 +52,8 @@ Person
 
 #### Data member is a property of object/class which use to store value of object/class
 
+- Syntax: [Access modifer] [Modifier] DataType MemberName;
+
 #### Method is a action of object/class;
 
   - Syntax: <Access Modifer> <Modifier> <Return Type> <Method name>
