@@ -56,7 +56,7 @@ Person
 
 #### Method is a action of object/class;
 
-  - Syntax: <Access Modifer> <Modifier> <Return Type> <Method name>
+  - Syntax: [Access Modifer] [Modifier] [Return Type] [Method name]
 
 #### Overloading methods, this machanism occur when two or more methods have the same name and different in parameters (different number or parameters, different types of parameter). They are complement
 
