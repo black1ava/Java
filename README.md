@@ -28,6 +28,12 @@ use format #,###.00 :
 - Access Modifier (private, default, protected, public)
 - Interface
 
+### OOP Concepts
+- Encapsulation
+- Abstraction
+- Polymorphism
+- Inheritance
+
 #### Object (Instance) and class
 
 - Object is everything around us which we can see, touch, ...
