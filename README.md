@@ -72,7 +72,7 @@ Constructor characteristic
 
 **Anonymous object** is a nameless object
 
-#### Overloading constructor, the mechanism occure when two or more constructors have the same name and different in parameters (different number of parameters, diffent type of parameter)
+#### Overloading constructor, the mechanism occure when two or more constructors have the same name and different in parameters (different number of parameters, different type of parameter)
 
 #### Inheritance is manichasm in which one object/class acquire all the properties and behavior of a parent object/class
 
