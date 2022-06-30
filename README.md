@@ -25,7 +25,7 @@ use format #,###.00 :
 - Inheritance
 - Overriding
 - Modifiers (Abstract, final, static)
-- Access Modifier (private, default, protected, public)
+- Access Modifier (private, default, protected, public) (Scope: same class, instance same package, instance different package, inheritance same package, inertiance different package)
 - Interface
 
 ### OOP Concepts
